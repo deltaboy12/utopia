@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>IMGOATED</title>
+<title>UTOPIA</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -10,30 +10,57 @@
 
 <body>
 
-<div id="topbar">
+<div class="sidebar">
 
-<input id="search" placeholder="Search or enter URL">
-
-<button onclick="go()">Go</button>
-
-<button onclick="cloak()">Blank Cloak</button>
-
-<button onclick="home()">Home</button>
+<div class="icon active">🏠</div>
+<div class="icon">🎮</div>
+<div class="icon">📺</div>
+<div class="icon">🎵</div>
+<div class="icon">⚙️</div>
 
 </div>
 
 
-<div id="home">
+<div class="main">
 
-<h1>Study Portal</h1>
+<h1 class="logo">UTOPIA</h1>
+<p class="subtitle">utopiathegoat</p>
 
-<p>Search the web or open a site</p>
+<div class="searchBox">
+
+<input id="search" placeholder="Search for anything!">
 
 </div>
 
 
-<iframe id="frame"></iframe>
+<div class="shortcuts">
 
+<div class="tile" onclick="openSite('https://play.geforcenow.com')">
+<img src="https://img.icons8.com/color/96/nvidia.png">
+<p>GeForce NOW</p>
+</div>
+
+<div class="tile" onclick="openSite('https://youtube.com')">
+<img src="https://img.icons8.com/color/96/youtube-play.png">
+<p>YouTube</p>
+</div>
+
+<div class="tile" onclick="openSite('https://github.com')">
+<img src="https://img.icons8.com/ios-filled/100/ffffff/github.png">
+<p>Github</p>
+</div>
+
+<div class="tile" onclick="openSite('https://google.com')">
+<img src="https://img.icons8.com/color/96/google-logo.png">
+<p>Google</p>
+</div>
+
+</div>
+
+
+<h2 class="proxyTitle">PROXY LINKS</h2>
+
+</div>
 
 <script src="script.js"></script>
 
