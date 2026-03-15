@@ -10,18 +10,30 @@
 
 <body>
 
+<!-- SIDEBAR -->
+
 <div class="sidebar">
 
-<div class="icon active">🏠</div>
-<div class="icon">🎮</div>
-<div class="icon">📺</div>
-<div class="icon">🎵</div>
-<div class="icon">⚙️</div>
+<div class="icon active" onclick="showPage('home')">🏠</div>
+
+<div class="icon" onclick="showPage('games')">🎮</div>
+
+<div class="icon" onclick="showPage('videos')">📺</div>
+
+<div class="icon" onclick="showPage('music')">🎵</div>
+
+<div class="icon" onclick="showPage('settings')">⚙️</div>
 
 </div>
 
 
-<div class="main">
+<!-- MAIN CONTENT -->
+
+<div class="pages">
+
+<!-- HOME -->
+
+<div id="home" class="page active">
 
 <h1 class="logo">UTOPIA</h1>
 <p class="subtitle">utopiathegoat</p>
@@ -32,33 +44,52 @@
 
 </div>
 
-
-<div class="shortcuts">
-
-<div class="tile" onclick="openSite('https://play.geforcenow.com')">
-<img src="https://img.icons8.com/color/96/nvidia.png">
-<p>GeForce NOW</p>
 </div>
 
-<div class="tile" onclick="openSite('https://youtube.com')">
-<img src="https://img.icons8.com/color/96/youtube-play.png">
-<p>YouTube</p>
-</div>
 
-<div class="tile" onclick="openSite('https://github.com')">
-<img src="https://img.icons8.com/ios-filled/100/ffffff/github.png">
-<p>Github</p>
-</div>
+<!-- GAMES -->
 
-<div class="tile" onclick="openSite('https://google.com')">
-<img src="https://img.icons8.com/color/96/google-logo.png">
-<p>Google</p>
-</div>
+<div id="games" class="page">
+
+<h1>Games</h1>
+
+<p>Games will go here.</p>
 
 </div>
 
 
-<h2 class="proxyTitle">PROXY LINKS</h2>
+<!-- VIDEOS -->
+
+<div id="videos" class="page">
+
+<h1>Videos</h1>
+
+<p>Video links will go here.</p>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<div id="music" class="page">
+
+<h1>Music</h1>
+
+<p>Music links will go here.</p>
+
+</div>
+
+
+<!-- SETTINGS -->
+
+<div id="settings" class="page">
+
+<h1>Settings</h1>
+
+<p>Settings panel.</p>
+
+</div>
+
 
 </div>
 
