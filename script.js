@@ -1,6 +1,10 @@
-function openSite(url){
+function showPage(page){
 
-window.location.href=url
+document.querySelectorAll(".page").forEach(p=>{
+p.classList.remove("active")
+})
+
+document.getElementById(page).classList.add("active")
 
 }
 
